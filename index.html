@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RideEase | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- APPLICATION HEADER -->
+    <header class="app-header">
+        <div class="brand">
+            <h1>RideEase</h1>
+            <p>Smart Ride Management</p>
+        </div>
+
+        <div class="admin-profile">
+            <span class="notification" aria-label="Notifications">♧</span>
+
+            <div class="profile-icon" aria-label="Admin profile">
+                A
+            </div>
+        </div>
+    </header>
+
+
+    <!-- MAIN DASHBOARD -->
+    <main class="dashboard">
+
+        <!-- WELCOME SECTION -->
+        <section class="welcome-section">
+            <p class="welcome-text">Welcome back, Admin</p>
+
+            <h2>Dashboard Overview</h2>
+
+            <p class="date-text">Your ride management overview</p>
+        </section>
+
+
+        <!-- SYSTEM HEALTH -->
+        <section class="health-card">
+            <div class="section-heading">
+                <h3>System Health</h3>
+
+                <span class="status-badge">
+                    ● All Systems Operational
+                </span>
+            </div>
+
+            <p>
+                All systems are running normally. Monitor rides, drivers
+                and platform activity from this dashboard.
+            </p>
+        </section>
+
+
+        <!-- STATISTICS -->
+        <section class="stats-grid">
+
+            <article class="stat-card">
+                <div class="card-icon">🚗</div>
+
+                <p>Active Rides</p>
+
+                <h3>128</h3>
+
+                <span class="card-note">
+                    Currently in progress
+                </span>
+            </article>
+
+
+            <article class="stat-card drivers-card">
+                <div class="card-icon">👥</div>
+
+                <p>Drivers Online</p>
+
+                <h3>64</h3>
+
+                <span class="card-note">
+                    Available on the platform
+                </span>
+            </article>
+
+
+            <article class="stat-card complaints-card">
+                <div class="card-icon">⚠️</div>
+
+                <p>Pending Complaints</p>
+
+                <h3>17</h3>
+
+                <span class="card-note">
+                    Awaiting review
+                </span>
+            </article>
+
+
+            <article class="stat-card">
+                <div class="card-icon">₹</div>
+
+                <p>Today's Revenue</p>
+
+                <h3>₹1.24L</h3>
+
+                <span class="card-note">
+                    Today's total revenue
+                </span>
+            </article>
+
+        </section>
+
+
+        <!-- RECENT ACTIVITY -->
+        <section class="content-card">
+            <h3>Recent Activity</h3>
+
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+
+                <div>
+                    <p class="activity-title">
+                        Driver D104 approved
+                    </p>
+
+                    <p class="activity-description">
+                        Driver verification completed successfully.
+                    </p>
+                </div>
+
+                <span class="activity-time">10 min ago</span>
+            </div>
+
+
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+
+                <div>
+                    <p class="activity-title">
+                        Ride R881 flagged
+                    </p>
+
+                    <p class="activity-description">
+                        A ride has been flagged for admin review.
+                    </p>
+                </div>
+
+                <span class="activity-time">25 min ago</span>
+            </div>
+
+
+            <div class="activity-item">
+                <span class="activity-dot"></span>
+
+                <div>
+                    <p class="activity-title">
+                        Complaint C221 opened
+                    </p>
+
+                    <p class="activity-description">
+                        A new customer complaint requires attention.
+                    </p>
+                </div>
+
+                <span class="activity-time">1 hr ago</span>
+            </div>
+        </section>
+
+
+        <!-- RIDE TYPE OPTIONS -->
+        <section class="content-card">
+            <h3>Ride Categories</h3>
+
+            <div class="ride-buttons">
+                <button class="ride-button" type="button">
+                    🚗<br>Car
+                </button>
+
+                <button class="ride-button" type="button">
+                    🏍️<br>Bike
+                </button>
+
+                <button class="ride-button" type="button">
+                    🛺<br>Auto
+                </button>
+            </div>
+        </section>
+
+
+        <!-- OPERATIONS SNAPSHOT -->
+        <section class="content-card operations-card">
+            <h3>Operations Snapshot</h3>
+
+            <p>
+                Monitor the current status of key platform operations.
+            </p>
+
+            <div class="operations-illustration">
+                <div class="chart-placeholder">
+                    <div style="font-size: 42px; margin-bottom: 10px;">
+                        💬
+                    </div>
+
+                    <p>
+                        Operations and platform activity
+                    </p>
+                </div>
+            </div>
+
+            <div class="operation-row">
+                <span>Ride Management</span>
+
+                <strong>Operational</strong>
+            </div>
+
+            <div class="operation-row">
+                <span>Driver Management</span>
+
+                <strong>Operational</strong>
+            </div>
+
+            <div class="operation-row">
+                <span>Data Privacy</span>
+
+                <strong>Protected</strong>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- BOTTOM NAVIGATION -->
+    <nav class="bottom-navigation" aria-label="Admin navigation">
+
+        <a href="#dashboard" class="nav-item active">
+            <span>▦</span>
+            <small>Dashboard</small>
+        </a>
+
+        <a href="#drivers" class="nav-item">
+            <span>♙</span>
+            <small>Drivers</small>
+        </a>
+
+        <a href="#rides" class="nav-item">
+            <span>🚗</span>
+            <small>Rides</small>
+        </a>
+
+        <a href="#privacy" class="nav-item">
+            <span>♧</span>
+            <small>Privacy</small>
+        </a>
+
+        <a href="#ai-assistant" class="nav-item">
+            <span>✧</span>
+            <small>AI Assistant</small>
+        </a>
+
+        <a href="#settings" class="nav-item">
+            <span>⚙</span>
+            <small>Settings</small>
+        </a>
+
+    </nav>
+
+</body>
+</html>
